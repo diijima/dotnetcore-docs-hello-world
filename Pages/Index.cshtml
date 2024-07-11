@@ -4,9 +4,143 @@
     ViewData["Title"] = "Home page";
 }
 
+
 <div class="text-center">
     <h1 class="display-4">Hello</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
     <hr />
     <div>Host operating system: @Model.OSVersion</div>
 </div>
+
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>企業紹介LP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="logo.png" alt="企業ロゴ" class="logo">
+            <ul>
+                <li><a href="#home">ホーム</a></li>
+                <li><a href="#services">サービス</a></li>
+                <li><a href="#cases">事例</a></li>
+                <li><a href="#contact">お問い合わせ</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>キャッチコピー</h1>
+            <p>企業の簡単な説明</p>
+            <button class="cta-button">資料請求</button>
+            <button class="cta-button">無料相談</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="about">
+            <div class="content">
+                <h2>企業概要</h2>
+                <p>企業理念やvisionの説明</p>
+            </div>
+            <img src="about-image.jpg" alt="企業イメージ">
+        </section>
+
+        <section id="services">
+            <h2>サービス紹介</h2>
+            <div class="service-container">
+                <div class="service">
+                    <img src="service1-icon.png" alt="サービス1アイコン">
+                    <h3>サービス1</h3>
+                    <p>サービス1の説明</p>
+                    <button>詳細を見る</button>
+                </div>
+                <div class="service">
+                    <img src="service2-icon.png" alt="サービス2アイコン">
+                    <h3>サービス2</h3>
+                    <p>サービス2の説明</p>
+                    <button>詳細を見る</button>
+                </div>
+                <div class="service">
+                    <img src="service3-icon.png" alt="サービス3アイコン">
+                    <h3>サービス3</h3>
+                    <p>サービス3の説明</p>
+                    <button>詳細を見る</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="cases">
+            <h2>実績・事例</h2>
+            <div class="stats">
+                <div class="stat">
+                    <h3>1000社</h3>
+                    <p>導入企業数</p>
+                </div>
+                <div class="stat">
+                    <h3>500件</h3>
+                    <p>プロジェクト数</p>
+                </div>
+                <div class="stat">
+                    <h3>98%</h3>
+                    <p>顧客満足度</p>
+                </div>
+            </div>
+            <div class="case-studies">
+                <img src="case1.jpg" alt="事例1">
+                <img src="case2.jpg" alt="事例2">
+                <img src="case3.jpg" alt="事例3">
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <h2>お客様の声</h2>
+            <div class="testimonial">
+                <img src="customer.jpg" alt="お客様の写真">
+                <h3>お客様名</h3>
+                <p>所属</p>
+                <blockquote>「お客様のコメント」</blockquote>
+            </div>
+        </section>
+
+        <section id="team">
+            <h2>チーム紹介</h2>
+            <div class="team-members">
+                <div class="member">
+                    <img src="member1.jpg" alt="メンバー1">
+                    <h3>名前</h3>
+                    <p>役職</p>
+                </div>
+                <!-- 他のメンバーも同様に追加 -->
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>お問い合わせ</h2>
+            <form>
+                <input type="text" placeholder="お名前" required>
+                <input type="email" placeholder="メールアドレス" required>
+                <textarea placeholder="お問い合わせ内容" required></textarea>
+                <button type="submit">送信</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>会社住所 | 電話番号 | メールアドレス</p>
+        <div class="social-icons">
+            <!-- SNSアイコンを追加 -->
+        </div>
+        <nav>
+            <a href="#home">ホーム</a>
+            <a href="#services">サービス</a>
+            <a href="#cases">事例</a>
+            <a href="#contact">お問い合わせ</a>
+        </nav>
+        <p>&copy; 2024 会社名 All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
